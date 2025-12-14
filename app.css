@@ -33,7 +33,6 @@ h1{
 }
 .first-element-left{
    display: flex;
-   width: auto;
    width: 50%;
    background-image: url("./image/tram.jpg");
    background-size: cover;
