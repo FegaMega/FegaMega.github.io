@@ -71,6 +71,7 @@ h1{
    margin: 10px;
    cursor: pointer;
    transition: transform 0.5s ease;
+   object-fit: contain;
 }
 
 .gallery-item:hover {
@@ -94,14 +95,13 @@ h1{
 
 /* Modal content (image) */
 .modal-content {
-  position: relative;
-  width: auto;
-  height: 90%;
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 5px;
-  overflow: hidden;
-  animation: zoomIn 0.5s;
+   position: relative;
+   max-width: 90%;
+   max-height: 90%;
+   border-radius: 5px;
+   overflow: hidden;
+   animation: zoomIn 0.5s;
+   object-fit: contain;
 }
 
 @keyframes zoomIn {
