@@ -34,7 +34,7 @@ h1{
    display: flex;
    width: 50%;
    flex-direction: column;
-   background-image: url("image/_MG_7587.jpg");
+   background-image: url("./image/_MG_7587.jpg");
    background-size: cover;
 }
 
