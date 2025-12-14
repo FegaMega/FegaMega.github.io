@@ -34,7 +34,7 @@ h1{
    display: flex;
    width: 50%;
    flex-direction: column;
-   background-image: url("./image/spårvagn.jpg");
+   background-image: url("./image/tram.jpg");
    background-size: cover;
 }
 
