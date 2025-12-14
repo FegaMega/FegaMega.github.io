@@ -3,7 +3,7 @@
 }
 
 body{
-   background-color : white;
+   background-color : black;
    font-family : 'Trebuchet MS', sans-serif;
    color : black;
    padding : 0px;
@@ -23,27 +23,22 @@ h1{
    margin : 0px;
    padding : 20px;
    color : white;
-   background-color: black;
 }
 
 .first-element{
    display: flex;
    width: 100%;
-
+   flex-wrap: wrap;
+   justify-content: flex-start;
 }
 .first-element-left{
    display: flex;
+   width: auto;
    width: 50%;
-   flex-direction: column;
    background-image: url("./image/tram.jpg");
    background-size: cover;
 }
 
-.first-element-left img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-}
 
 .first-element-right{
    display: flex;
@@ -51,7 +46,7 @@ h1{
 }
 
 .first-element-right img{
-   width: 100%;
+   min-width: 100%;
    height: 100%;
    object-fit: cover;
 }
