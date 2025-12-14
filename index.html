@@ -2,12 +2,12 @@
 <html>
 
 <head>
-
-<link rel="stylesheet" href="app.css"/>
-
+   <link rel="stylesheet" href="app.css"/>
+   
 </head>
 
 <body>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <header>
       <div class="linkheader">
          <nav>
@@ -15,13 +15,7 @@
                <div class="dropdown">
                   <li class = dropbtn><a href="index.html">Home</a></li>
                   <div class = dropdown-content>
-                     <a href="index.html">same shit</a>
-                  </div>
-               </div>
-               <div class="dropdown">
-                  <li class = dropbtn><a href="nothome.html">notHome</a></li>
-                  <div class = dropdown-content>
-                     <a href="nothome.html">same shit but this time longer</a>
+                     <a href="index.html">LOOOOOOOOOP!</a>
                   </div>
                </div>
             </ul>
@@ -31,16 +25,66 @@
 
    <div class = first-element>
       <div class= first-element-left>
-         <p>Welcome to the test website</p>
-         <h1>Home</h1>
-         <p>Click the button below to display the hidden content from the template.</p>
+         <h1>My test website</h1>
       </div>
       <div class = first-element-right>
-         <iframe width="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=12.050137817859651%2C57.75164274121191%2C12.054617106914522%2C57.75298518247152&amp;layer=mapnik" style="border: 0px solid black"></iframe><br/>
+         <img src="image/_MG_7625-2.jpg" alt="Audi driving">
       </div>
    </div>
-<button class="button">Shadow</button>
-<button class="button">Shadow</button>
+
+   <div class="gallery">
+
+      <img src="image/_MG_7639-1.jpg" alt="Övergångsställe" class="gallery-item" onclick="openModal('modal-Övergångsställe', 'Övergångsställe')">
+
+      <img src="image/_MG_7578.jpg" alt="Basket Korg" class="gallery-item" onclick="openModal('modal-Basket-Korg', 'Basket Korg')">
+
+      <img src="image/_MG_7596.jpg" alt="Blad" class="gallery-item" onclick="openModal('modal-Blad', 'Blad')">
+      
+      <img src="image/_MG_7633.jpg" alt="Götaplatsen" class="gallery-item" onclick="openModal('modal-Götaplatsen', 'Götaplatsen')">
+      
+   </div>
+   <div id="modal-Övergångsställe" class="modal">
+      <span class="close" onclick="closeModal('modal-Övergångsställe')">&times;</span>
+      <img src="image/_MG_7639-1.jpg" alt="Övergångsställe" class="modal-content">
+      <div class="caption"></div>
+   </div>
+
+   <div id="modal-Basket-Korg" class="modal">
+      <span class="close" onclick="closeModal('modal-Basket-Korg')">&times;</span>
+      <img src="image/_MG_7578.jpg" alt="Basket Korg" class="modal-content">
+      <div class="caption"></div>
+   </div>
+
+   <div id="modal-Blad" class="modal">
+      <span class="close" onclick="closeModal('modal-Blad')">&times;</span>
+      <img src="image/_MG_7596.jpg" alt="Blad" class="modal-content">
+      <div class="caption"></div>
+   </div>
+
+   <div id="modal-Götaplatsen" class="modal">
+      <span class="close" onclick="closeModal('modal-Götaplatsen')">&times;</span>
+      <img src="image/_MG_7633.jpg" alt="Götaplatsen" class="modal-content">
+      <div class="caption"></div>
+   </div>
+
+   <script>
+      function openModal(modalId, caption) {
+      let modal = document.getElementById(modalId);
+      modal.style.display = "flex";
+      modal.classList.add("show");
+      let message = modal.querySelector(".caption");
+      message.innerText = caption;
+      }
+
+      function closeModal(modalId) {
+      let modal = document.getElementById(modalId);
+      modal.classList.remove("show");
+      setTimeout(function () {
+         modal.style.display = "none";
+         modal.querySelector(".caption").innerText = "";
+      }, 300);
+      }
+   </script>
 
 
 </body>
