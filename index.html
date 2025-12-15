@@ -54,12 +54,9 @@
 
          <img src="./image/Pigeon.jpg" alt="Pigeon" class="gallery-item" onclick="openModal('modal-Pigeon', 'German Pigeon')">
          
-      </div>
-      <div class="gallery">
-
          <img src="./image/franzosicher-dom.jpg" alt=" franzosicher-dom" class="gallery-item" onclick="openModal('modal-franzosicher-dom', 'Französicher Dom')">
 
-         <img src="./image/Gedachtniskirche.jpg" alt="Gedachtniskirche" class="gallery-item" onclick="openModal('modal-Gedachtniskirche', 'Gedachtniskirche')">
+         <img src="./image/Gedachtniskirche.jpg" alt="Gedachtniskirche" class="gallery-item" onclick="openModal('modal-Gedachtniskirche', 'Gedächtniskirche')">
          
          <img src="./image/Siegesallee.jpg" alt="Siegesallee" class="gallery-item" onclick="openModal('modal-Siegesallee', 'Siegesallee')">
 
@@ -124,7 +121,7 @@
 
       <div id="modal-Gedachtniskirche" class="modal">
          <span class="close" onclick="closeModal('modal-Gedachtniskirche')">&times;</span>
-         <img src="./image/Gedachtniskirche.jpg" alt="Gedachtniskirche" class="modal-content">
+         <img src="./image/Gedachtniskirche.jpg" alt="Gedächtniskirche" class="modal-content">
          <div class="caption"></div>
       </div>   
 
@@ -140,25 +137,6 @@
          <div class="caption"></div>
       </div>
    </div>
-   <script>
-      function openModal(modalId, caption) {
-      let modal = document.getElementById(modalId);
-      modal.style.display = "flex";
-      modal.classList.add("show");
-      let message = modal.querySelector(".caption");
-      message.innerText = caption;
-      }
-
-      function closeModal(modalId) {
-      let modal = document.getElementById(modalId);
-      modal.classList.remove("show");
-      setTimeout(function () {
-         modal.style.display = "none";
-         modal.querySelector(".caption").innerText = "";
-      }, 300);
-      }
-   </script>
-
 
 </body>
 
