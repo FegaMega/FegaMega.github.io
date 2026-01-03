@@ -34,6 +34,22 @@
    </div>
    <div class="centered-container"> <h1>My Photography</h1>
       <div class="gray-rounded-container">
+      <button type="button" class="collapsible">New Year 2026</button>
+         <div class="content">
+            <div class="gallery">
+               
+               <img src="./image/Firework 1.jpg" alt="Fireworks" class="gallery-item" onclick="openModal('modal-Fireworks1', 'Fireworks(1)')">
+               
+               <img src="./image/Firework 2.jpg" alt="Fireworks" class="gallery-item" onclick="openModal('modal-Fireworks2', 'Fireworks(2)')">
+               
+               <img src="./image/Firework 3.jpg" alt="Fireworks" class="gallery-item" onclick="openModal('modal-Fireworks3', 'Fireworks(3)')">
+               
+               <img src="./image/Firework 4.jpg" alt="Fireworks" class="gallery-item" onclick="openModal('modal-Fireworks4', 'Fireworks(4)')">
+
+            </div>
+         </div>
+      </div> 
+      <div class="gray-rounded-container">
       <button type="button" class="collapsible">Random Stuff</button>
          <div class="content">
             <div class="gallery">
@@ -74,6 +90,28 @@
    </div>
    
    <div> 
+      
+      <div id="modal-Fireworks1" class="modal">
+         <span class="close" onclick="closeModal('modal-Fireworks1')">&times;</span>
+         <img src="./image/Firework 1.jpg" alt="Fireworks(1)" class="modal-content">
+         <div class="caption"></div>
+      </div>
+      <div id="modal-Fireworks2" class="modal">
+         <span class="close" onclick="closeModal('modal-Fireworks2')">&times;</span>
+         <img src="./image/Firework 2.jpg" alt="Fireworks(2)" class="modal-content">
+         <div class="caption"></div>
+      </div>
+      <div id="modal-Fireworks3" class="modal">
+         <span class="close" onclick="closeModal('modal-Fireworks3')">&times;</span>
+         <img src="./image/Firework 3.jpg" alt="Fireworks(3)" class="modal-content">
+         <div class="caption"></div>
+      </div>
+      <div id="modal-Fireworks4" class="modal">
+         <span class="close" onclick="closeModal('modal-Fireworks4')">&times;</span>
+         <img src="./image/Firework 4.jpg" alt="Fireworks(4)" class="modal-content">
+         <div class="caption"></div>
+      </div>
+
       <div id="modal-Övergångsställe" class="modal">
          <span class="close" onclick="closeModal('modal-Övergångsställe')">&times;</span>
          <img src="./image/övergångsställe.jpg" alt="Övergångsställe" class="modal-content">
